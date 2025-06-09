@@ -26,3 +26,18 @@ Additional scripts:
 pnpm build # build all packages
 pnpm lint  # run ESLint across the monorepo
 ```
+
+## FastAPI prototype
+
+A minimal FastAPI service lives in `app/` with a couple of endpoints:
+
+- `GET /` – returns `{"status": "TRU X is alive"}`
+- `GET /health` – checks PostgreSQL and Redis connectivity.
+
+Use Docker Compose to start the API together with PostgreSQL 16 and Redis:
+
+```bash
+docker compose up --build
+```
+
+Once running, access `http://localhost:8000`.
