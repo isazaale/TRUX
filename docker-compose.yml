@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER:-trux}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-truxpass}
+      POSTGRES_DB: ${POSTGRES_DB:-trux}
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      - postgres
+      - redis
+  postgres:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-trux}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-truxpass}
+      POSTGRES_DB: ${POSTGRES_DB:-trux}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  redis:
+    image: redis:7
+    restart: always
+volumes:
+  postgres_data:
