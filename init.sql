@@ -1,0 +1,3 @@
+CREATE DATABASE trux;
+\c trux;
+CREATE SCHEMA IF NOT EXISTS trux_core;
