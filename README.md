@@ -26,3 +26,29 @@ Additional scripts:
 pnpm build # build all packages
 pnpm lint  # run ESLint across the monorepo
 ```
+
+## Docker quickstart
+
+Start the API, PostgreSQL and Redis stack with a single command:
+
+```bash
+make up
+```
+
+Stop the containers with:
+
+```bash
+make down
+```
+
+View service logs:
+
+```bash
+make logs
+```
+
+Execute the API test suite:
+
+```bash
+make test
+```
