@@ -18,7 +18,7 @@ REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
 @app.get("/")
 async def root():
-    return {"status": "TRU X is alive"}
+    return {"status": "TRU X is alive.... Ok"}
 
 @app.get("/health")
 async def health():
