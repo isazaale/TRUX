@@ -27,6 +27,20 @@ pnpm build # build all packages
 pnpm lint  # run ESLint across the monorepo
 ```
 
+### Running only the web checks
+
+To verify the landing page or run the same lint command used in CI for the
+Next.js app, install the dependencies once and then execute the scoped script:
+
+```bash
+pnpm install
+pnpm --filter web lint
+```
+
+If it is the first time you run the command locally, Next.js may prompt to
+configure ESLint. The repository already ships with a strict `.eslintrc.json`
+under `apps/web/`, so the prompt will be skipped after the initial run.
+
 ## FastAPI prototype
 
 A minimal FastAPI service lives in `app/` with a couple of endpoints:
