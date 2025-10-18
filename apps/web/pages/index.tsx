@@ -115,6 +115,13 @@ export default function Home() {
                 >
                   Hablar con un experto
                 </Link>
+                <Link
+                  href="/flujos"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-base font-semibold text-white/80 transition hover:text-white"
+                >
+                  Ver flujos operativos
+                  <span aria-hidden className="text-lg">→</span>
+                </Link>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 shadow-[0_0_45px_rgba(59,130,246,0.2)]">
