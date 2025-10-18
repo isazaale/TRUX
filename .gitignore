@@ -3,4 +3,5 @@ node_modules
 *.log
 pnpm-lock.yaml
 .next
+.turbo
 dist
