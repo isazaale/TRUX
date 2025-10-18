@@ -11,7 +11,7 @@ export class CanvasResolver {
   constructor(private service: CanvasService) {}
 
   @Query(() => [Node])
-  nodes(@Context() ctx: any) {
+  nodes(@Context() _ctx: any) {
     return this.service.nodes()
   }
 
