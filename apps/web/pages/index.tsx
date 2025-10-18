@@ -53,6 +53,64 @@ export default function Home() {
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/70 bg-white shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
                 <span className="text-lg font-semibold text-slate-600">MA</span>
               </div>
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+                Logística moderna desplegada con la velocidad de Vercel.
+              </h1>
+              <p className="max-w-xl text-lg text-white/70">
+                Diseñada para equipos de operaciones que necesitan visibilidad en tiempo real, automatización confiable y
+                la flexibilidad de una plataforma serverless.
+              </p>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/signup"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-black transition hover:bg-zinc-200"
+                >
+                  Comenzar gratis
+                  <span aria-hidden className="text-lg">→</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-base font-semibold text-white/80 transition hover:text-white"
+                >
+                  Hablar con un experto
+                </Link>
+                <Link
+                  href="/flujos"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 text-base font-semibold text-white/80 transition hover:text-white"
+                >
+                  Ver flujos operativos
+                  <span aria-hidden className="text-lg">→</span>
+                </Link>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 shadow-[0_0_45px_rgba(59,130,246,0.2)]">
+              <div className="absolute -right-16 top-1/2 h-48 w-48 -translate-y-1/2 rounded-full bg-cyan-400/20 blur-3xl" />
+              <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl" />
+              <div className="relative space-y-5">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-white/70">
+                  Deploy
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-black/60 p-6 font-mono text-[13px] leading-6 text-emerald-300">
+                  <p>pnpm trux deploy --target=vercel</p>
+                  <p className="text-white/60">▶ build completed in 32s</p>
+                  <p className="text-white/60">▶ edge config synced</p>
+                  <p className="text-white/60">▶ preview URL ready</p>
+                </div>
+                <div className="grid gap-3 rounded-2xl border border-white/10 bg-black/60 p-6 text-sm text-white/70">
+                  <div className="flex items-center justify-between">
+                    <span>Tiempo de actividad</span>
+                    <span className="font-semibold text-white">99.99%</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Latencia promedio</span>
+                    <span className="font-semibold text-white">38 ms</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Entregas monitoreadas</span>
+                    <span className="font-semibold text-white">+2.5M</span>
+                  </div>
+                </div>
               <div className="space-y-0.5 text-sm text-slate-400">
                 <p className="font-medium text-slate-600">Hola, Mariana</p>
                 <p className="text-xs uppercase tracking-[0.24em] text-slate-300">dashboard</p>
